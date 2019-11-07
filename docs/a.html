@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Task A - AtCoder Hitachi Hokudai Labo & Hokkaido University Contest 2019-1 - chart</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="./plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body style="padding:6px">
+    <div>
+      <a href="https://atcoder.jp/contests/hokudai-hitachi2019-1/standings">Hitachi Hokudai Labo & Hokkaido University Contest 2019-1</a>
+    </div>
+    <div>
+      <span>Task A</span> 
+      <a href="./b.html">Task B</a> 
+    </div>
+    <p id="unko">loading...</p>
+    <div class="container">
+      <div class="row">
+        <div id="standings" class="md-col-6" style="padding:8px"></div>
+      </div>
+      <div id="rankChart" style="width:100%; height:600px"></div>
+      <div id="scoreChart" style="width:100%; height:600px"></div>
+      <div id="scoreDistribution" style="width:100%; height:600px"></div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+    <script>
+      var sheetUrl = 'https://docs.google.com/spreadsheets/d/1T7HBU1gMmMSC3pRX4xTdzdcV9jDHfUGoMCOPAfdpnVc/';
+      var taskId = 'hokudai_hitachi2019_1_a';
+      var app = new ChartApp(sheetUrl, taskId);
+    </script>
+  </body>
+</html>
